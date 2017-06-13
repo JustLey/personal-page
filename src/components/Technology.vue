@@ -1,9 +1,9 @@
 <template>
-  <div class="technology">
+  <div class="technology" style="margin: 16px">
     <div>
-      <img @mouseover="hovered = true" id="icon" :src="icon" width="24px" height="24px">
+      <img @mouseover="changeParentDescription" id="icon" :src="icon" width="24px" height="24px">
       <transition name="slide-fade">
-        <span id="technology-name" v-if="hovered" >
+        <span id="technology-name" v-if="hovered" style="display: block">
           <a :href="site" :style="{ color: color }">
             {{ name }}
           </a>
@@ -32,6 +32,10 @@ export default {
     color: {
       type: String,
       required: true
+    },
+    description: {
+      type: String,
+      required: true
     }
   },
   data () {
@@ -40,7 +44,14 @@ export default {
       icon: this.icon,
       site: this.site,
       hovered: false,
-      color: this.color
+      color: this.color,
+      description: this.description
+    }
+  },
+  methods: {
+    changeParentDescription: function() {
+      this.hovered = true
+      this.$emit('changeParentDescription', this.description)
     }
   }
 }
@@ -85,4 +96,9 @@ a {
 #technology-name a {
   text-decoration: none;
 }
+
+.technology {
+  display: inline-block;
+}
+
 </style>

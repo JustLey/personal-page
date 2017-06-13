@@ -1,16 +1,7 @@
 <template>
   <div id="app">
     <hello></hello>
-    <technology name="Ruby"
-                icon="https://cdn.codementor.io/assets/topic/category_header/ruby-on-rails-bc9ab2af8d92eb4e7eb3211d548a09ad.png"
-                site="https://www.ruby-lang.org"
-                color="#d73a2e"
-                ></technology>
-    <technology name="Cache"
-                icon="http://www.intersystems.com/assets/cropped-BRANDMARK_sq_644x644-300x300.png"
-                site="http://www.intersystems.com/our-products/cache/cache-overview/"
-                color="#26308a"
-                ></technology>
+    <technology-list :description.sync="description"></technology-list>
     <bye></bye>
   </div>
 </template>
@@ -18,25 +9,36 @@
 <script>
 import Hello from './components/Hello'
 import Bye from './components/Bye'
-import Technology from './components/Technology'
+import TechnologyList from './components/TechnologyList'
 
 export default {
   name: 'app',
   components: {
     Hello,
     Bye,
-    Technology
+    TechnologyList
   }
 }
 </script>
 
 <style>
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://fonts.gstatic.com/s/lato/v13/UyBMtLsHKBKXelqf4x7VRQ.woff2) format('woff2');
+}
+
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  display: flex;
+  /* Direction of the items, can be row or column */
+  flex-direction: column;
 }
 </style>

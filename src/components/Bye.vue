@@ -1,4 +1,5 @@
 <template>
+  <footer>
   <div class="bye">
     Powered by
     <div>
@@ -12,6 +13,7 @@
       </transition>
     </div>
   </div>
+</footer>
 </template>
 
 <script>
@@ -59,5 +61,9 @@ a {
 }
 #framework-name {
   display: block;
+}
+
+footer {
+  padding-top: -20px;
 }
 </style>
