@@ -19,12 +19,17 @@
 </template>
 
 <script>
+import Btn from '@nylira/vue-button'
+
 export default {
   name: 'bye',
   data () {
     return {
       hovered: false
     }
+  },
+  components: {
+    Btn
   }
 }
 </script>
