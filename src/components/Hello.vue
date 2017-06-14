@@ -10,8 +10,8 @@
         <br>
         <span>Fundador @ <a href="https://laissez.io"> laissez.io</a></span>
         <br>
-        <span><a href="https://docs.google.com/document/d/1i6IGCnA3VLk3b4y6rTe5Wh-d4xEmVtDe7-WOc_Pq6Lk/pub">Curriculum Vitae</a></span>
-        <btn icon="envelope-o"></btn><span>rianreis@outlook.com</span>
+        <span style="vertical-align: middle"><a href="https://docs.google.com/document/d/1i6IGCnA3VLk3b4y6rTe5Wh-d4xEmVtDe7-WOc_Pq6Lk/pub">Curriculum Vitae</a></span>
+        <i aria-hidden="true" class="ni-btn-icon fa fa-envelope-o" style="margin: 8px;"></i></btn><span style="vertical-align: middle; border: none">rianreis@outlook.com</span>
       </h4>
       <a href="https://www.linkedin.com/in/rian-provesano-reis-431a9932/">
         <btn icon="linkedin" theme="tendermint" size="lg"></btn>
@@ -78,6 +78,7 @@ a {
 
 .ni-btn-wrapper {
   display: inline-block;
+
 }
 
 .ni-btn {

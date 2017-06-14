@@ -14,7 +14,7 @@
       </transition>
     </div>
   </div>
-  <div>Você pode conferir o código-fonte dessa página no <a href="https://github.com/JustLey/personal-page"><btn icon="github"></btn></a></div>
+  <div><span style="vertical-align: middle;">Você pode conferir o código-fonte dessa página no </span><a href="https://github.com/JustLey/personal-page"><btn style="vertical-align: middle;" icon="github"></btn></a></div>
 </footer>
 </template>
 

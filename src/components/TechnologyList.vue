@@ -111,6 +111,27 @@ a {
   text-align: center;
 }
 
+@media screen and (max-width: 1304px) {
+  #description {
+    margin: 16px 350px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #description {
+    margin: 16px 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #description {
+    margin: 16px 256px;
+    text-align: center;
+  }
+}
+
 .slide-fade-enter-active {
   transition: all .3s ease;
 }
