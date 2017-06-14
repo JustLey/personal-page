@@ -9,6 +9,9 @@
         <span>Desenvolvedor, Graduando de Sistemas de Informação, Empreendedor e Entusiasta Eclético</span>
         <br>
         <span>Fundador @ <a href="https://laissez.io"> laissez.io</a></span>
+        <br>
+        <span><a href="https://docs.google.com/document/d/1i6IGCnA3VLk3b4y6rTe5Wh-d4xEmVtDe7-WOc_Pq6Lk/pub">Curriculum Vitae</a></span>
+        <btn icon="email"></btn><span>rianreis@outlook.com</span>
       </h4>
       <a href="https://www.linkedin.com/in/rian-provesano-reis-431a9932/">
         <btn icon="linkedin" theme="tendermint" size="lg"></btn>

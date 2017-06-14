@@ -1,5 +1,6 @@
 <template>
   <footer>
+
   <div class="bye">
     Powered by
     <div>
@@ -13,6 +14,7 @@
       </transition>
     </div>
   </div>
+  <div>Você pode conferir o código-fonte dessa página no <a href="https://github.com/JustLey/personal-page"><btn icon="github"></btn></a></div>
 </footer>
 </template>
 
